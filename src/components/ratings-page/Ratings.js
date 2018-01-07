@@ -4,12 +4,14 @@ class Ratings extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      stars: props.stars
+      stars: 0
     }
+
+    this.assignStars = this.assignStars.bind(this)
   }
 
-  assignStars(event) {
-    event.preventDefault();
+  assignStars() {
+    //event.preventDefault();
     //fetch('/', {
      //method: 'post',
      //headers: {'Content-Type':'application/json'},
@@ -17,18 +19,20 @@ class Ratings extends Component {
       //'rating': this.stars
      //}
     //});
-    console.log('')
+
+    this.setState({stars: parseInt(this.id)})
+    console.log(this.state.stars)
 
   }
 
   render() {
     return (
       <div>
-        <button onClick={this.assignStars} stars='1'>1</button>
-        <button onClick={this.assignStars} stars='2'>2</button>
-        <button onClick={this.assignStars} stars='3'>3</button>
-        <button onClick={this.assignStars} stars='4'>4</button>
-        <button onClick={this.assignStars} stars='5'>5</button>
+        <button id='1' onClick={this.assignStars}>1</button>
+        <button id='2' onClick={this.assignStars}>2</button>
+        <button id='3' onClick={this.assignStars}>3</button>
+        <button id='4' onClick={this.assignStars}>4</button>
+        <button id='5' onClick={this.assignStars}>5</button>
       </div>
 
       //<p>test</p>
