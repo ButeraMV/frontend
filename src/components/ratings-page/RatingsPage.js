@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import MovieList from './MovieList'
 
 class RatingsPage extends Component {
   render() {
     return (
-      <h1>this is the ratings page</h1>
+      <div className='ratings-page'>
+        <h3>Please rate the following movies:</h3>
+        <MovieList />
+      </div>
     );
   }
 }
