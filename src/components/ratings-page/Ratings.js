@@ -20,15 +20,15 @@ class Ratings extends Component {
      //}
     //});
 
-    this.setState({stars: parseInt(this.id)})
-    console.log(this.state.stars)
-
+    //this.setState({stars: parseInt(this.id)})
+    //console.log(this.state.stars)
+console.log(this)
   }
 
   render() {
     return (
       <div>
-        <button id='1' onClick={this.assignStars}>1</button>
+        <button id='1' onClick={this.assignStars.bind(this)}>1</button>
         <button id='2' onClick={this.assignStars}>2</button>
         <button id='3' onClick={this.assignStars}>3</button>
         <button id='4' onClick={this.assignStars}>4</button>
