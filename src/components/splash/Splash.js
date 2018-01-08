@@ -5,7 +5,7 @@ class Splash extends Component {
   render() {
     return (
       <div className='splash-screen'>
-        <h3>Welcome to the Recommendation Machine</h3>
+        <h2>Welcome to the Recommendation Machine</h2>
         <Link to='/ratings'><button>Continue</button></Link>
       </div>
     );

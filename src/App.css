@@ -7,8 +7,11 @@ html, body {
 }
 
 .splash-screen {
-  background: black;
-  color: white;
+  width: 70%;
+  margin: 10% auto 0 auto;
+}
+
+.recommendation-page {
   width: 70%;
   margin: 10% auto 0 auto;
 }
