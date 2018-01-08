@@ -19,9 +19,9 @@ class App extends Component {
       <Router>
       <div className="App">
 
-        <Route exact path={`${process.env.PUBLIC_URL}/`} component={Splash} />
-        <Route exact path={`${process.env.PUBLIC_URL}/ratings`} component={RatingsPage} />
-        <Route exact path={`${process.env.PUBLIC_URL}/recommendations`} component={RecommendationPage} />
+        <Route path={`${process.env.PUBLIC_URL}/`} component={Splash} />
+        <Route path={`${process.env.PUBLIC_URL}/ratings`} component={RatingsPage} />
+        <Route path={`${process.env.PUBLIC_URL}/recommendations`} component={RecommendationPage} />
       </div>
       </Router>
     );
